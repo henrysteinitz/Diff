@@ -13,3 +13,7 @@ void Matrix :: set(int x, int y, double value) {
 double Matrix :: get(int x, int y) {
 	return v.get(x + (y * width), value);
 }
+
+Matrix Matrix :: times(Matrix m) {
+	
+}

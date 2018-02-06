@@ -5,11 +5,15 @@
 
 class Matrix {
 	Vector v;
+	int width;
+	int height;
 
 	public:
-		Matrix (int width, int height);
+		Matrix (int w, int h);
 		void set(int x, int y, double value);
 		double get(int x, int y);
+		Matrix times(Matrix m) const;
+		Vector get_vector() const;
 };
 
 #endif
