@@ -7,7 +7,7 @@ class Differentiable<T> {
  public:
   //TODO(henrysteinitz): On each operation restore
  private:
-  virtual Tensor<T> embed() const;
+  virtual Tensor embed() const;
   virtual void restore();
 }
 
