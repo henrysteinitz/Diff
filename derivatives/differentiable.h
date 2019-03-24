@@ -3,12 +3,18 @@
 namespace water {
   
 // Every differentiable datatype implen
-class Differentiable<T> {
+class Differentiable {
  public:
-  //TODO(henrysteinitz): On each operation restore
+  Differentiable() {
+    // TODO(henrysteinitz): Embed the 
+  }
+  // TODO(henrysteinitz): On each operation restore
  private:
-  virtual Tensor embed() const;
-  virtual void restore();
+  virtual Tensor Embed() const;
+  virtual void Restore();
+  
+  std::shared_ptr<TensorNode> tensor_node_;
+  std::shared_ptr<TensorGraph> tensor_graph_;
 }
 
 }
