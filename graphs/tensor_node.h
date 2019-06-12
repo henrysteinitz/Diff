@@ -1,10 +1,13 @@
+
+
 namespace water {
   
 class TensorNode : Node {
  public:
-  
+  Tensor tensor() { return *tensor_; }
+
  private:
-  std::shared_ptr<Tensor> tensor;
+  std::unique_ptr<Tensor> tensor_;
 }
-  
-}
+
+}  // namespace water

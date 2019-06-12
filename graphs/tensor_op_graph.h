@@ -8,5 +8,7 @@
 
 class TensorOpGraph : Graph {
  public:
-  Derivative differentiate(const string& output_id, const string& input_id) const;
+  Derivative Differentiate(const string& output_id, const string& input_id) const;
+
+  absl::flat_hash_map<string, Tensor> Compute() const;
 }
